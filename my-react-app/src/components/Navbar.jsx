@@ -1,15 +1,41 @@
-import React, { useState } from 'react'
-function Navbar() {
-  const [count, setCount] = useState(0)
+import React, { useState } from 'react';
+import '../styles/navbar.css';
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const scrollRoSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    element.scrollIntoView({ behavior: 'smooth' });
+    setIsOpen(false);
+  };
 
   return (
     <> 
-        <header>
-          <h1>
-            I'm Peter Paul G. Quiaño
-          </h1>
-          <p>Beginner React Developer</p>
-        </header>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            My Portfolio
+          </div>
+          <div className='hamburger' onClick={toggleMenu}>
+            <span className={isOpen ? 'bar active' : 'bar'}></span>
+            <span className={isOpen ? 'bar active' : 'bar'}></span>
+            <span className={isOpen ? 'bar active' : 'bar'}></span>
+          </div>
+          <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item">
+              <button onClick={() => scrollRoSection('hero')}>Home</button>
+            </li>
+            <li className="nav-item">
+              <button onClick={() => scrollRoSection('about')}>About</button>
+            </li>
+            <li className="nav-item">
+              <button onClick={() => scrollRoSection('skills')}>Skills</button>
+            </li>
+          </ul>
+        </div>  
+      </nav>    
     </>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/about.css'
 import Myimage from '../assets/portrait.jpg'
 
 function About() {

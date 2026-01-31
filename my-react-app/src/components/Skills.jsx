@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../styles/skills.css'
 function Skills() {
   const [count, setCount] = useState(0)
 

@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  background: #111;
+  color: white;
+}
+
+.about-text,
+.about-image {
+  padding: 60px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}

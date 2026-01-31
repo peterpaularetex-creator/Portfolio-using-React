@@ -1,0 +1,58 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  color: white;
+  background-image: url('../assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 100px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+  line-height: 0.85;
+}
+
+.hero p {
+  font-size: 24px;
+  opacity: 0.8;
+  letter-spacing: 10.5px;
+}
+
+.btnresume, .btnportfolio {
+  margin-left: 115px;
+  margin-right: -65px;
+  font-size: 25px;
+  border: white 2px solid;
+  border-radius: 50px;
+  opacity: 0.8;
+  background: transparent;
+  cursor: pointer;
+  padding: 7px 40px;
+}
+
+.btnresume:hover, .btnportfolio:hover {
+  background-color: #555;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: start;
+}
+
+.hero .bio {
+  font-size: 45px;
+  margin-top: -15px;
+}
+
+.hero .name, .hero .bio {
+  margin-left: 100px;
+}
