@@ -1,7 +1,19 @@
 .about {
+  height: 90vh;
   display: flex;
   background: #111;
   color: white;
+  align-items: left;
+  justify-content: center;
+  text-align: start;
+}
+
+.about-text {
+  margin-left: 50px;
+}
+
+.about-text p {
+  margin-top: 100px;
 }
 
 .about-text,
@@ -12,4 +24,8 @@
 .about-image img {
   width: 100%;
   border-radius: 8px;
+}
+
+.portrait {
+  margin-top: -70px;
 }

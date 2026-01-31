@@ -13,6 +13,7 @@
 .hero h1 {
   font-size: 100px;
   font-weight: 1000;
+  margin-top: -50px;
   margin-bottom: 10px;
   line-height: 0.85;
 }
@@ -51,8 +52,9 @@
 .hero .bio {
   font-size: 45px;
   margin-top: -15px;
+  margin-left: 107px;
 }
 
-.hero .name, .hero .bio {
+.hero .name {
   margin-left: 100px;
 }

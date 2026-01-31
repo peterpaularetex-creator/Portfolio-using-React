@@ -16,7 +16,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
           <div className="navbar-logo">
-            My Portfolio
+            PP. Quiaño
           </div>
           <div className='hamburger' onClick={toggleMenu}>
             <span className={isOpen ? 'bar active' : 'bar'}></span>
