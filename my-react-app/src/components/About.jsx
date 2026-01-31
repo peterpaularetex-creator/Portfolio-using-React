@@ -7,7 +7,7 @@ function About() {
 
   return (
     <> 
-        <section className='about'>
+        <section id="about" className='about'>
           <div className='about-text'>
             <h2>About</h2>
             <p>

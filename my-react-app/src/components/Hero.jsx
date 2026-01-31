@@ -6,7 +6,7 @@ function Hero() {
 
   return (
     <> 
-        <section className="hero">
+        <section id="hero" className="hero">
           <h1 className='name'><span style={{fontWeight: 'normal', fontSize: '75px'}}>PETER</span><br/> QUIAÑO</h1>
           <p className='bio'>Web Developer</p>
           <div>

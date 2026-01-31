@@ -5,7 +5,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const scrollRoSection = (sectionId) => {
+  const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     element.scrollIntoView({ behavior: 'smooth' });
     setIsOpen(false);
@@ -25,13 +25,13 @@ const Navbar = () => {
           </div>
           <ul className={isOpen ? 'nav-menu active' : 'nav-menu'}>
             <li className="nav-item">
-              <button onClick={() => scrollRoSection('hero')}>Home</button>
+              <button onClick={() => scrollToSection('hero')}>Home</button>
             </li>
             <li className="nav-item">
-              <button onClick={() => scrollRoSection('about')}>About</button>
+              <button onClick={() => scrollToSection('about')}>About</button>
             </li>
             <li className="nav-item">
-              <button onClick={() => scrollRoSection('skills')}>Skills</button>
+              <button onClick={() => scrollToSection('skills')}>Skills</button>
             </li>
           </ul>
         </div>  
